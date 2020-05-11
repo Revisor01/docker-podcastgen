@@ -3,9 +3,9 @@ all:
 	$(MAKE) up
 
 podcastgen:
-	curl -L https://sourceforge.net/projects/podcastgen/files/podcastgen/podcastgen-2.7/podcastgen-2.7.zip/download -o podcastgen.zip
+	curl -L https://github.com/albertobeta/PodcastGenerator/archive/v3.0.1.zip -o podcastgen.zip
 	unzip podcastgen.zip
-	mv PodcastGenerator-2.7 podcastgen
+	mv PodcastGenerator-3.0.1 podcastgen
 	rm -f podcastgen.zip
 
 .PHONY: up
