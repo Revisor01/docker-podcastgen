@@ -3,10 +3,7 @@ all:
 	$(MAKE) up
 
 podcastgen:
-	curl -L https://github.com/albertobeta/PodcastGenerator/archive/v3.0.1.zip -o podcastgen.zip
-	unzip podcastgen.zip
-	mv PodcastGenerator-3.0.1 podcastgen
-	rm -f podcastgen.zip
+	git clone --branch master https://github.com/PodcastGenerator/PodcastGenerator.git podcastgen
 
 .PHONY: up
 up: podcastgen
